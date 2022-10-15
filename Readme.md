@@ -6,4 +6,6 @@ tbd.
 
 ## Services
 
-tbd.
+### heimdall
+### portainer
+### samba

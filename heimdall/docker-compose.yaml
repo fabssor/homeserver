@@ -1,0 +1,12 @@
+services:
+  heimdall:
+    container_name: heimdall
+    restart: unless-stopped
+    image: linuxserver/heimdall:latest
+    volumes:
+      - '/srv/heimdall/config:/config'
+      - '/srv/heimdall/shared:/shared'
+    ports:
+      - "80:80"
+    environment:
+      TZ: Europe/Berlin
