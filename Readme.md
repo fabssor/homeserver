@@ -26,9 +26,36 @@ For a example on how to configure sleep-on-lan go to [Sleep-On-Lan](tools/sleep-
 
 Once all services have been started, they will automatically start-up again when the serves is turned on.
 
-### heimdall
+All the persistent data of the docker services will be stored under `/srv/<service-name>`.
 
+### Heimdall
 
+Heimdall will be accessible through the IP and/ or servername over the browser.
 
-### portainer
-### samba
+You can for example also add your router Webpage here for easy access:
+
+Links: 
+
+- [Github](https://github.com/linuxserver/Heimdall)
+- [Dockerhub](https://hub.docker.com/r/linuxserver/heimdall)
+
+### Portainer
+
+Portainer can be used to monitor all the services via the browser. It will be available at port 9000.
+
+Links: 
+
+- [Offical Website](https://www.portainer.io/)
+- [Dockerhub](https://hub.docker.com/r/portainer/portainer)
+
+Portainer has currently no full-control over the services since they are not started over the webpage of portainer!
+
+### Samba
+
+Samba will make some shares available.
+Create a `.env` file in 
+
+Links: 
+
+- [Github](https://github.com/dperson/samba)
+- [Dockerhub](https://hub.docker.com/r/dperson/samba)
